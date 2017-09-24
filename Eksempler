@@ -1,0 +1,81 @@
+//Eksempler og forklaringer - If og else statements
+
+// || = eller    && = og 
+
+
+ // Vil bare vise true, da det allerede er true
+if (true) {
+	//do something
+	alert('male');
+};
+
+
+// Vil vise male, da male == male
+if ('male' == 'male') {
+	alert('male');
+};
+
+
+
+//Bruger variabler - Eksempel 1:
+var number1 = 10;
+var number2 = 100;
+
+if (number1 > number2) {
+	alert('true');
+} else {
+	alert('false');
+}
+
+//Bruger variabler - Eksempel 2:
+var name1 = 'Rich';
+var name2 = 'Bob';
+
+if (name1 == 'Rich'){
+	alert('True!!!');
+} else if (name2 == 'Rich'){
+	alert('True!!!');
+} else {
+	alert('False!!!');
+};
+
+// functioner kan blive burgt igen - Lidt ligesom en variabel
+// Kan blive gemt i en variabel, og en variabel kan refere til en function
+
+var whatIsMyFavColor = function(){
+
+	// Alt efter return bliver ikke brugt! - Så her bliver svaret altid 'red'
+    return 'red';
+
+    return true;
+
+	return 'blue';
+}
+
+var doSomething = function(){
+	console.log('Do Something!!!')
+}
+
+var area = function (width, height){
+	return width*height;
+}
+
+var fullname = function(firstname,secondname) {
+	return firstname + ' ' +secondname;
+}
+
+// Eksempler og forkalringer - Variabler
+
+// var = variabler
+
+var favColor = 'blue';
+var myFavColors = ['blue','red','green'];
+var numOfFavColors = 3;
+var HasGotfaveColors = true;
+var richObject = {
+	firstName: 'Rich',
+	lastName 'Armstrong',
+	favColors: ['blue','red','green'],
+	yearsAlive: 103,
+	isMale: true
+};
